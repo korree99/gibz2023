@@ -1,0 +1,486 @@
+/* body */
+body{
+    font-family: "menco", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+/* navbar */
+nav{
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(159, 197, 248);
+    border-style: solid;
+    border-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 1em;
+    padding-right: 0;
+    z-index: 1;
+}
+.navLeftTextItself{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.navRightContainer{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    height: 2em;
+}
+.navRightTextElements{
+    display: flex;
+    gap: 1em;
+}
+.shoppingCartContainer{
+    position: relative;
+    display: inline-block;
+}
+.cartButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5vh;
+    margin-right: 1em;
+}
+.dropContent{
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    min-width: 15em;
+    min-height: 85vh;
+    border-style: solid;
+    border-color: black;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 0;
+    z-index: 1;
+    top: 2.3em;
+}
+#dropContentProceedPaymentBtn{
+    width: 5em;
+    height: 3em;
+}
+.Cart{
+    max-height: 2em;
+    padding: 10px;
+    position: relative;
+}
+.show{
+    display: block;
+}
+.dropContainerEinheit{
+    display: flex;
+}
+.elementNamesAndCounter{
+    display: flex;
+    align-items: center;
+    min-height: 2.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: medium;
+}
+.counterMinusPlus{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5em;
+
+}
+.cartElements{
+    height: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: large;
+}
+.cartCounter{
+    height: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: large;
+}
+.cartTotalPrize{
+    height: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: large;
+}
+.dropContainerZusammenfassung{
+    display: flex;
+    margin-top: 65vh;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+}
+.total{
+    display: flex;
+}
+@keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.4);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+.pop {
+    animation: pop 0.5s ease-in-out;
+}
+#spanCartCounter{
+    position: absolute;
+    align-self: center;
+    vertical-align:middle;
+    right: 10px;
+    top: 8px;
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 1em;
+}
+/* inner body */
+.bodyTitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 3em;
+    margin: 0.5em;
+}
+.bodyDiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bodyInnerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bodyMainPicContainer{
+    display: flex;
+    justify-content: center;
+}
+.bodyMainPic{
+    min-height: 17em;
+}
+.BodyThreePicsInnerDiv{
+    display: flex;
+    position: relative;
+    min-height: 10em;
+    min-width: 15em;
+    max-height: 10em;
+    max-width: 15em;
+}
+.bodyThreePicsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+.BodyImages{
+    position: relative;
+    min-width: 15em;
+    min-height: 10em;
+    max-width: 15em;
+    max-height: 10em;
+}
+.BodyLinkTexts{
+    display: flex;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*innerbody for pizza */
+.bodyDivPizza{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bodyInnerDivPizza{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.BodyInnerEachDivPizza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PizzaImageContainer{
+    display: flex;
+    max-width: 20em;
+    max-height: 10em;
+    min-width: 20em;
+    min-height: 10em;
+}
+.PizzaImg{
+    max-width: 20em;
+    max-height: 10em;
+    min-width: 20em;
+    min-height: 10em;
+}
+.PizzaDescription{
+    max-width: 20em;
+    min-width: 10em;
+    min-height: auto;
+    max-height: 10em;
+    display: flex;
+    flex-direction: column;
+}
+.PizzaTopDescription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 20em;
+    min-height: auto;
+    max-height: 2em;
+}
+.PizzaIngredients{
+    display: flex;
+    flex-direction: column;
+    
+}
+.PizzaInfo{
+    display: flex;
+    align-items: center;
+}
+/*innerbody for salad */
+.bodyDivSalad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.bodyInnerDivSalad{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.BodyInnerEachDivSalad{
+    display: flex;
+    flex-direction: column;
+}
+.SaladImageContainer{
+    display: flex;
+    min-width: 20em;
+    min-height: 10em;
+    max-width: 20em;
+    max-height: 10em;
+}
+.SaladImg{
+    min-width: 20em;
+    min-height: 10em;
+    max-width: 20em;
+    max-height: 10em;
+}
+.SaladDescription{
+    max-width: 20em;
+    min-width: 10em;
+    min-height: auto;
+    max-height: 10em;
+    display: flex;
+    flex-direction: column;
+}
+.SaladTopDescription{
+    display: flex;
+    flex-direction: column;
+}
+.SaladTitel{
+    margin: 0;
+    padding-top: 0.5em;
+}
+.SaladInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SaladIngredients{
+    margin: 0;
+    padding-top: 0.5em;
+}
+.SaladSelektor{
+    min-width: 15em;
+    max-width: 15em;
+    min-height: 2em;
+    max-height: 2em;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+/*innerbody for softdrinks */
+.bodyDivSoft{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.bodyInnerDivSoft{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.BodyInnerEachDivSoft{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.SoftImageContainer{
+    display: flex;
+    min-width: 15em;
+    min-height: 15em;
+    max-width: 15em;
+    max-height: 15em;
+}
+.SoftImg{
+    min-width: 15em;
+    min-height: 15em;
+    max-width: 15em;
+    max-height: 15em;
+}
+.SoftDescription{
+    max-width: 20em;
+    min-width: 10em;
+    min-height: auto;
+    max-height: 10em;
+    display: flex;
+    flex-direction: column;
+}
+.SoftTopDescription{
+    display: flex;
+    flex-direction: column;
+}
+.SoftInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SoftInfoPrizeCart{
+    display: flex;
+    gap: 0.5em  ;
+}
+.SoftTitel{
+    margin: 0em;
+    padding-top: 0.5em;
+}
+.SoftSelektor{
+    min-width: 4.5em;
+    max-width: 4.5em;
+    min-height: 2em;
+    max-height: 2em;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+/*innerbody for softdrinks */
+.bodyDivFeed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+}
+.bodyInnerDivFeed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.formColumnSelection{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.formColumnOption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.FormColumnChoices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 1em;
+}
+.formWrittenTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    min-height: 5.5em;
+}
+.FormWrittenTextBox{
+    display: flex;
+    justify-content: space-between;
+    width: 20em;
+    margin: 0.5em;
+}
+.FormColumnChoicesRadioEach{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    accent-color: black;
+}
+#specialBox{
+    height: 10em;
+    margin-top: 1.5em;
+}
+#formRadioColumnSecondRow{
+    margin-right: 0.6em;
+}
+.formSubmitContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2em;
+}
+.formSubmitButton{
+    box-shadow: 2px 2px;
+}
+.req {
+    color: red;
+  }
+  
+/* footer */
+footer{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(159, 197, 248);
+    border-style: solid;
+    border-color: black;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 1em;
+    margin-top: auto;
+    z-index: 1;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/general.css">
+        <link rel="icon" href="/pizzaFavicon.png">
+        <title>Tony's Pizza Factory</title>
+    </head>
+
+    <body>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/nni6kwn.css">
+        
+            <nav>
+                <div class="navLeftTextContainer">
+                    <a class="navLeftTextItself" href="/index/index.html">Tony's Pizza Factory</a>
+                </div>
+                
+                <div class="navRightContainer">
+                    <div class="navRightTextElements">
+                        <a href="/Pizza/pizza.html">Pizza</a>
+                        <a href="/Salad/salad.html">Salad</a>
+                        <a href="/Softdrinks/softdrinks.html">Softdrinks</a>
+                        <a href="/Feedback/feedback.html">Feedback</a>
+                    </div>
+                    <div class="shoppingCartContainer">
+                        <button onclick="dropdownFunction(false)" class="cartButton">
+                        <img src="/cart.jpg" class="Cart" alt="Cart">
+                        <span id="spanCartCounter"></span>
+                        </button>
+                        <h2 class="dropContent">dropContent</h2>
+                    </div>
+                </div>
+            </nav>
+            
+            <fieldset class="bodyDivFeed" id="bodyDiv">
+                <h1 class="bodyTitle">Tell us what you think</h1>
+                <div class="bodyInnerDivFeed">
+                    <form class="form">
+                        <div class="formColumnSelection">
+                            <p>How do you like our pizza? <span class="req">*</span></p>
+                            <p>What do you think about our prizes? <span class="req">*</span></p>
+                            <p>Your name?</p>
+                            <p>Your e-mail address? <span class="req">*</span></p>
+                            <p>What can we do better?</p>
+                        </div>
+                        <div class="formColumnOption">
+                            <div class="FormColumnChoices">
+                                <div>
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="pizza" id="radio1" required>
+                                    <label for="radio1">Awesome</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="pizza" id="radio2" required>
+                                    <label for="radio2">Good</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="pizza" id="radio3" required>
+                                    <label for="radio3">Okay</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="pizza" id="radio4" required>
+                                    <label for="radio4">Poor</label>
+                                </div>
+                            </div>
+                            <div class="FormColumnChoices">
+                                <div id="formRadioColumnSecondRow">
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="price" id="radio5" required>
+                                    <label for="radio5">Fair</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="price" id="radio6" required>
+                                    <label for="radio6">Okay</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="FormColumnChoicesRadioEach" name="price" id="radio7" required>
+                                    <label for="radio7">Expensive</label>
+                                </div>
+                            </div>
+                            <div class="formWrittenTextContainer">
+                                <input class="FormWrittenTextBox" type="text" name="name">
+                                <input class="FormWrittenTextBox" type="email" name="email" required>
+                            </div>
+                            <div>
+                                <input class="FormWrittenTextBox" id="specialBox" name="improvements">
+                            </div>
+                            <div class="formSubmitContainer">
+                                <p><span class="req">*</span> - Required field</p>
+                                <button class="formSubmitButton" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </fieldset>
+
+            <footer>
+                <div class="footerLeft">
+                    Hours:<br>
+                    Mon - Thu: 11 am - 23 pm<br>
+                    Fri - Sat: 11 am - 24 pm<br>
+                    Sunday closed
+                </div>
+                <div class="footerMiddle">
+                    <cite>"The Pizzeria is one place I have been<br>
+                    wanting to visit for a long time. The<br>
+                    reason being their Napoli pizza which<br>
+                    absolutely blew me away"</cite> - Jimmy
+                </div>
+                <div class="footerMiddle">
+                    Address:<br>
+                    Tony's Pizza Factory<br>
+                    2122 N Clark St<br>
+                    Chicago, IL 60614, USA
+                </div>
+            </footer>
+
+        <script src="/general.js"></script>
+        
+    </body>
+</html>

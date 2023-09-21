@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="/general.css">
+        <link rel="icon" href="/pizzaFavicon.png">
+        <title>Tony's Pizza Factory</title>
+    </head>
+
+    <body>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/nni6kwn.css">
+        
+            <nav>
+                <div class="navLeftTextContainer">
+                    <a class="navLeftTextItself" href="/index/index.html">Tony's Pizza Factory</a>
+                </div>
+                <div class="navRightContainer">
+                    <div class="navRightTextElements">
+                        <a href="/Pizza/pizza.html">Pizza</a>
+                        <a href="/Salad/salad.html">Salad</a>
+                        <a href="/Softdrinks/softdrinks.html">Softdrinks</a>
+                        <a href="/Feedback/feedback.html">Feedback</a>
+                    </div>
+                    <div class="shoppingCartContainer">
+                        <button onclick="dropdownFunction(false)" class="cartButton">
+                            <img src="/cart.jpg" class="Cart" alt="Cart">
+                            <span id="spanCartCounter"></span>
+                        </button>
+                        <h2 class="dropContent">dropContent</h2>
+                    </div>
+                </div>
+            </nav>
+            <div class="bodyDivSoft" id="bodyDiv">
+                <h1 class="bodyTitle">Soft drinks</h1>
+                <div class="bodyInnerDivSoft">
+                    <div class="BodyInnerEachDivSoft" data-index="0"></div>
+                    <div class="BodyInnerEachDivSoft" data-index="1"></div>
+                    <div class="BodyInnerEachDivSoft" data-index="2"></div>
+                    <div class="BodyInnerEachDivSoft" data-index="3"></div> 
+                </div>
+            </div>
+
+            <footer>
+                <div class="footerLeft">
+                    Hours:<br>
+                    Mon - Thu: 11 am - 23 pm<br>
+                    Fri - Sat: 11 am - 24 pm<br>
+                    Sunday closed
+                </div>
+                <div class="footerMiddle">
+                    <cite>"The Pizzeria is one place I have been<br>
+                    wanting to visit for a long time. The<br>
+                    reason being their Napoli pizza which<br>
+                    absolutely blew me away"</cite> - Jimmy
+                </div>
+                <div class="footerRight">
+                    Address:<br>
+                    Tony's Pizza Factory<br>
+                    2122 N Clark St<br>
+                    Chicago, IL 60614, USA
+                </div>
+            </footer>
+
+        <script src="/general.js">showSoftdrink()</script>
+        
+    </body>
+</html>

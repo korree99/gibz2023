@@ -1,0 +1,45 @@
+wrapper			-				-
+navTonysPizza		navLeftTextContainer		Id
+tonyTextClass		navLeftTextItself		Id
+navRest 		navRightContainer		Id
+indexElements		navRightTextElements		Id
+shoppingCart 		shoppingCartContainer		Id
+cartButton		cartButton			Id
+cart			Cart				Class
+dropContent		dropContent			Id
+mainDiv			bodyDiv				Id
+title			bodyTitle			Id
+outerInception		bodyInnerDiv			Id
+form			form				Id
+columnSelection		formColumnSelection		Id
+input			FormColumnInput			Class	löschen
+columnOption		formColumnOption		Id
+choices			FormColumnChoices		Class
+radioChoiceSelection	FormColumnChoicesRadio		Class	löschen
+radio			FormColumnChoicesRadioEach	Class
+boxwrapper		formWrittenTextContainer	Id
+deExtrovertiert		formRadioColumnSecondRow	Id
+box			FormWrittenTextBox		Class
+specialBox		FormWrittenTextBoxHuge		Id
+submit			formSubmitContainer		Id
+submitButton		formSubmitButton		Id
+inceptionDiv		BodyInnerEachDiv		Class
+mainPicDiv		bodyMainPicContainer		Id
+mainPic			bodyMainPic			Id
+threePics		bodyThreePicsContainer		Id
+containerPics		BodyThreePicsInnerDiv		Class
+img			BodyImages			Class
+text			BodyLinkTexts			Class
+innerText		BodyInnerTexts			Class	löschen
+footerLeft		footerLeft			Id
+footerMiddle		footerMiddle			Id
+footerRight		footerRight			Id
+			dropContentProceedPaymentBtn	Id
+pizza
+pizzaImg		PizzaImg			Class
+description		PizzaDescription		Class
+topDescription		PizzaTopDescription		Class
+pizzaTitle		bodyTitle			Class	
+pizzaInfo		PizzaInfo			Class
+prizeTag		PizzaPrizeTag			Class	löschen
+text			PizzaIngredients		Class
